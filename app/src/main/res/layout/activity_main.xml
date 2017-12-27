@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.laxmi.mycalculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/res"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/num1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:inputType="numberSigned"
+        android:hint="First no."
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textSize="20dp"
+        android:inputType="numberSigned"
+        android:hint="Second no."
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:layout_alignBaseline="@+id/num1"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/clr"
+        android:background="@color/colorGreen"
+        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:textSize="18dp"
+        android:text="clr"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="3"
+        android:id="@+id/gridLayout"
+        android:layout_below="@+id/res"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp">
+
+        <Button android:text="+"
+            android:textSize="20dp"
+            android:background="@color/newColor"
+            android:id="@+id/add"
+            android:layout_width="120dp" />
+
+        <Button android:text="-"
+            android:textSize="20dp"
+            android:background="@color/newColor1"
+            android:layout_width="120dp"
+            android:id="@+id/sub" />
+
+        <Button android:text="*"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor"
+            android:id="@+id/mul" />
+
+        <Button android:text="sin"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor1"
+            android:id="@+id/sin" />
+
+        <Button android:text="cos"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor"
+
+            android:id="@+id/cos" />
+
+        <Button android:text="tan"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor1"
+            android:id="@+id/tan" />
+
+        <Button android:text="sinh"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor"
+            android:id="@+id/sinh" />
+
+        <Button android:text="cosh"
+            android:layout_width="120dp"
+            android:textSize="20dp"
+            android:background="@color/newColor1"
+            android:id="@+id/cosh" />
+
+        <Button android:text="tanh"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor"
+            android:id="@+id/tanh" />
+
+        <Button android:text="sq"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor1"
+            android:id="@+id/sq" />
+
+        <Button android:text="sqrt"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor"
+            android:id="@+id/sqrt" />
+
+        <Button android:text="fact"
+            android:textSize="20dp"
+            android:layout_width="120dp"
+            android:background="@color/newColor1"
+            android:id="@+id/fact" />
+
+        <Button android:text="ms"
+            android:textSize="20dp"
+            android:background="@color/colorOrange"
+            android:layout_width="120dp"
+            android:id="@+id/ms" />
+
+        <Button android:text="mr"
+            android:textSize="20dp"
+            android:background="@color/red"
+            android:layout_width="120dp"
+            android:id="@+id/mr" />
+
+        <Button android:text="mc"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="120dp"
+            android:id="@+id/mc" />
+
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
